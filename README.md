@@ -2,6 +2,7 @@
 Simple docker-compose environment for playing around with logstash filters and seeing them in kibana.
 
 ## Usage
+* Everything is ready to go, just run `docker-compose build && docker-compose up`.
 * Filebeat watches the logs in `./filebeat/logs` (config defined in `./filebeat/prospectors`)
 * Lines added to the logs get sent to logstash
 * Logstash applys the filters in `./logstash/pipeline` and sends them to elasticsearch
