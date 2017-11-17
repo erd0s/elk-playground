@@ -1,0 +1,1 @@
+CADDY %{IP:client}.+\[(?<logdate>[^\]]+)\] \"(?<method>[a-zA-Z]+) (?<path>[^\s]+) (?<http_version>[^\s]+)" %{NUMBER:response_code} %{NUMBER:size} "(?<referer>[^\"]+)" "(?<user_agent>[^\"]+)" %{NUMBER:response_time}

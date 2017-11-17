@@ -1,0 +1,5 @@
+- input_type: log
+  paths:
+    - /logs/access.log
+  tags: ["webservices", "access"]
+    
